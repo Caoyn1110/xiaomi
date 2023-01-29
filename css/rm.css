@@ -1,0 +1,66 @@
+.rm {
+  width: 84px;
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+  z-index: 999;
+}
+.rm-item {
+  width: 100%;
+  display: block;
+  height: 92px;
+  background: #fff;
+  border: 1px solid #f5f5f5;
+  border-top: none;
+  text-align: center;
+  color: #757575;
+  padding-top: 14px;
+  position: relative;
+}
+.rm-item .iconfont {
+  font-size: 30px;
+  display: block;
+}
+.rm-to-top {
+  margin-top: 18px;
+}
+.rm-item:first-child,
+.rm-to-top {
+  border-top: 1px solid #f5f5f5;
+}
+
+/* 弹出层 */
+.rm-item:hover .rm-mention {
+  display: block;
+}
+.rm-mention {
+  width: 128px;
+  padding: 14px;
+  border: 1px solid #f5f5f5;
+  background: #fff;
+  position: absolute;
+  right: 90px;
+  top: 0;
+  display: none;
+  color: #757575;
+}
+.rm-mention img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 20px;
+}
+.rm-mention::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  border: 1px solid #f5f5f5;
+  border-left: none;
+  border-bottom: none;
+  /* transform css3属性  变形，变换 */
+  transform: rotate(45deg);
+  right: -6px;
+  top: 30px;
+}

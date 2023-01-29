@@ -1,0 +1,122 @@
+.header {
+  height: 100px;
+  position: relative;
+}
+.header .header-logo {
+  background: url("../img/logo.png");
+  width: 56px;
+  height: 56px;
+  background-size: 56px 56px;
+  margin-top: 22px;
+  margin-right: 172px;
+}
+.header .header-logo h1 {
+  display: none;
+}
+.header .header-menu > a {
+  height: 100px;
+  padding: 0 10px;
+  line-height: 100px;
+  font-size: 16px;
+}
+.header .header-submenu {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  padding: 30px 0;
+  display: none;
+}
+.header .header-submenu a {
+  width: 204px;
+  border-right: 1px solid #eee;
+  text-align: center;
+  font-size: 12px;
+}
+.header .header-submenu a:last-child {
+  border-right: none;
+}
+.header .header-submenu .header-cover img {
+  width: 160px;
+  height: 110px;
+}
+.header .header-submenu .header-name {
+  color: #333;
+}
+.header .header-submenu .header-price {
+  color: #ff6700;
+}
+.header .header-menu:hover .header-submenu {
+  display: block;
+}
+
+.header .header-search {
+  margin-top: 25px;
+  position: relative;
+}
+.header .header-search input {
+  width: 245px;
+  height: 50px;
+  font-size: 16px;
+  text-indent: 15px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.header .header-search .header-searchicon {
+  width: 55px;
+  height: 50px;
+  color: #777;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: none;
+  cursor: pointer;
+}
+.header .header-search .header-searchicon .iconfont {
+  font-size: 20px;
+}
+.header .header-search .header-suggest {
+  position: absolute;
+  width: 245px;
+  top: 50px;
+  left: 0;
+  border: 1px solid #ff6700;
+  border-top: none;
+  display: none;
+  background: #fff;
+  z-index: 60;
+}
+.header .header-search .header-suggest a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.header .header-search .header-suggest a:hover {
+  background: #eee;
+  color: inherit;
+}
+
+.header .header-search input:hover {
+  border-color: #aaa;
+}
+.header .header-search input:hover ~ .header-searchicon {
+  border-color: #aaa;
+}
+.header .header-searchicon:hover {
+  background: #ff6700;
+  border-color: #ff6700;
+  color: #fff;
+}
+.header .header-search input:focus {
+  border-color: #ff6700;
+}
+.header .header-search input:focus ~ .header-searchicon {
+  border-color: #ff6700;
+}
+.header .header-search input:focus ~ .header-suggest {
+  display: block;
+}
